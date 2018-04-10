@@ -1,0 +1,163 @@
+@import './defaults/mixins-css3.scss';
+
+$color-white: #ffffff;
+$color-blue: #0089cf;
+$color-gray: #cbcbcb;
+$color-orange-lite: #facd10;
+$color-orange-dark: #c8a40f;
+$color-black: #000000;
+$color-lite-green: #55a738;
+$color-gray-lite: #e8e8e8;
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+.md-card-out {
+  width: 320px;
+  display: inline-block;
+  margin: -28px 10px;
+
+  .md-button {
+    width: 26px;
+    height: 26px;
+    float: right;
+    left: 20px;
+    top: 20px;
+    background-color: $color-white;
+    border: 1px solid $color-lite-green;
+
+    .md-fab {
+      box-shadow: 0 3px 5px -1px rgba(85,167,56,.2), 0 6px 10px 0 rgba(85,167,56,.14), 0 1px 18px 0 rgba(85,167,56,.12);
+    }
+  }
+
+  .md-icon {
+    font-size: 14px!important;
+    font-weight: bold;
+
+    &-font {
+      color: $color-lite-green;
+    }
+  }
+
+  .md-card {
+    margin: 0;
+  }
+}
+
+.md-card {
+  width: 320px;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: top;
+
+    &-media {
+      &:first-of-type {
+        .layer {
+
+            background-color: rgba(50, 50, 50, 0.2);
+            width: 100%;
+            height: 100%;
+        }
+      }
+    }
+    &-content {
+      &:last-of-type {
+        @include css3-background-gradient-horizontal-multi2($startColor: $color-orange-lite, $startOpacity: 1, $endColor: $color-lite-green, $endOpacity: 1, $middleColor: $color-orange-dark, $middleOpacity: 1, $middlePos: 39%);
+        padding-bottom: 330px;
+      }
+      .d-flex {
+        display: flex;
+        justify-content: start;
+
+        h2 {
+          text-align: left;
+          font-size: 18px;
+          font-weight: 400;
+          margin: 5px;
+        }
+      }
+      .vl {
+        border-left: 6px solid $color-orange-lite;
+        height: 70px;
+        margin-right: 7px;
+      }
+    }
+
+  &-media {
+    .button {
+      &-blue-shadow {
+        position: absolute;
+
+        .md-button {
+          font-size: 11px;
+          margin-top: 15px;
+          border-radius: 20px;
+          box-shadow: 0 5px 21px -2px $color-blue;
+          background-color: $color-blue;
+          height: 26px;
+          line-height: 26px;
+
+          p {
+            font-weight: bold;
+            color: $color-white;
+          }
+
+        }
+      }
+
+      &-orange-shadow {
+        position: absolute;
+
+        .md-button {
+          font-size: 11px;
+          margin-top: 15px;
+          border-radius: 20px;
+          box-shadow: 0 5px 21px -2px $color-orange-lite;
+          background-color: $color-orange-lite;
+          height: 26px;
+          line-height: 26px;
+
+          p {
+            font-weight: bold;
+            color: $color-black;
+          }
+
+        }
+      }
+    }
+  }
+  .md-field {
+    .md-input {
+      height: 38px;
+      border: 2px solid $color-gray;
+      border-radius: 2px;
+    }
+  }
+
+  &-actions {
+    margin-bottom: 38px;
+    text-align: center;
+    display: block;
+
+    .md-button {
+      background-color: $color-orange-lite;
+      border-radius: 20px;
+      box-shadow: 0px 5px 0px -2px $color-orange-dark;
+
+      &-content {
+        p {
+          padding: 0 45px;
+          font-size: 11px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
