@@ -8,9 +8,7 @@
         <div class="button-blue-shadow">
           <md-button><p>Kiemelés</p></md-button>
         </div>
-        <div class="layer">
           <img src="https://vuematerial.io/assets/examples/card-image-1.jpg" alt="People">
-        </div>
       </md-card-media>
       <md-ripple>
       <md-card-header>
@@ -31,9 +29,7 @@
             </div>
           <md-field>
             <label>Radio választás</label>
-
           </md-field>
-
             <checkbox v-model="disabled" disabled>Kikapcsolt checkbox</checkbox>
             <checkbox v-model="values" color="#0089cf" value="Hover checkbox">Hover checkbox</checkbox>
             <checkbox v-model="values" color="#0089cf" value="Bekapcsolt checkbox" checked>Bekapcsolt checkbox</checkbox>
@@ -73,7 +69,7 @@
       </md-button>
     <md-card>
       <md-card-media>
-        <img src="https://vuematerial.io/assets/examples/card-image-1.jpg" alt="People">
+        <img src="https://vuematerial.io/assets/examples/card-sky.jpg" alt="Sky">
       </md-card-media>
       <md-ripple>
         <md-card-content>
@@ -88,7 +84,7 @@
 import HelloWorld from './components/HelloWorld'
 
 export default {
-  name: 'App'
+  name: 'App',
 }
 </script>
 

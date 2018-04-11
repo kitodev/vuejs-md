@@ -13,11 +13,12 @@
     "vue": "^2.5.2",
     "vue-material": "^1.0.0-beta-8",
     "vue-material-checkbox": "^1.0.5",
+    "vue-material-radio": "^1.0.2",
     "vuetify": "^1.0.13"
   },
   "repository": {
     "type": "git",
-    "url" : "https://github.com/kornel1991/vuejs-md.git"
+    "url": "https://github.com/kornel1991/vuejs-md.git"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
